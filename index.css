@@ -1,0 +1,401 @@
+/*
+* @Author: 22378
+* @Date:   2020-03-24 08:38:16
+* @Last Modified by:   22378
+* @Last Modified time: 2020-12-14 16:45:01
+*/
+* { padding: 0;margin: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+img {vertical-align: bottom;}
+.clear after{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+.container{
+	height: 70px;
+	width: 100%;
+	background: white;
+}
+.top{
+	width: 1300px;
+	height: 70px;
+	margin: 0 auto;
+}
+.top .logo{
+	display: inline-block;
+	float: left;
+	width: 100px;
+	height: 70px;
+}
+.top ul{
+	display: inline-block;
+	float: left;
+}
+.top li{
+	float: left;
+}
+
+.top a{
+	color: black;
+	font-size: 18px;
+	display: inline-block;
+	height: 28px;
+	padding: 0 18px;
+	margin: 20px 0;
+	border-bottom: 2px solid transparent;
+}
+.top ul a:hover{
+	border-bottom: 2px solid #70f3ff;
+}
+.top #inputs{
+	display: inline-block;
+	padding-left: 18px;
+    font-size: 14px;
+    color: rgba(191,191,191,1);
+	background: white;
+	float: left;
+	border-radius: 5px;
+	margin-top: 10px;
+	height: 37px;
+	width: 220px
+}
+.top #search{
+	cursor:pointer;
+	display: inline-block;
+	float: left;
+	border-radius: 5px;
+	margin-top: 10px;
+	width: 30px;
+	height: 41px;
+	border: 0;
+	background: #00A4FFFF url('img/search.png') no-repeat center center;
+}
+.del{
+	cursor:pointer;
+	display: block;
+	font-size: 8px;
+	color: gray;
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+}
+.myul{
+	display: block;
+	border-radius: 5px;
+	border-left:blue 2px solid;
+	border-bottom:blue 2px solid;
+	border-right:blue 2px solid;
+	list-style: none;
+	width: 240px;
+	height: 200px;
+	display: block;
+	z-index: 1;
+	background-color: white;
+	position: absolute;
+	left: 850px;
+	top: 50px;
+}
+.myli{
+	color:#696969;
+	position: relative;
+	padding-left: 20px;
+	line-height: 25px;
+	font-size: 12px;
+	width: 222px;
+}
+.myli:hover{
+	color:#4169E1;
+	background-color:#D3D3D3;
+}
+.top input:focus{
+	outline: none;
+	border: blue solid 2px;
+} 
+.top .top-right{
+	float: right;
+}
+.top-right li{
+	float: left;
+	height: 70px;
+	width: 100px;
+	position: relative;
+}
+.top-right img{
+	width: 50px;
+	height: 50px;
+}
+.top-right .record{
+	margin-top:5px;
+}
+.top-right span{
+	font-size: 10px;
+	color: rgba(165,165,165,1);
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+}
+.banner img{
+	width: 1320px;
+}
+.middle{
+	width: 100%;
+	height: 465px;
+}
+.banner{
+	width: 1320px;
+	height: 445px;
+	margin: 0 auto;
+	position: relative;
+}
+#leftPoint,#rightPoint{
+	height: 50px;
+	width: 30px;
+	opacity: 0.5;
+}
+#leftPoint{
+	position: absolute;
+	left: 0px;
+	top: 200px;
+}
+#rightPoint{
+	position: absolute;
+	right: 0px;
+	top: 200px;
+}
+#banner0{
+	display: block;
+	height: 377px;
+	width: 1320px;
+}
+#banner2,#banner3,#banner4,#banner1{
+	display: none;
+	height: 377px;
+	width: 1320px;
+}
+.middle .banner ul{
+	position: absolute;
+	left: 0;
+}
+.middle .banner li{
+	color: #bfa78f;
+	font-size: 12px;
+	width: 330px;
+	height: 85px;
+	float: left;
+	background:rgba(0,0,0,.8)
+}
+
+.banner .size{
+	color: #bfa78f;
+	font-size: 18px;
+	padding-bottom: 5px;
+	padding-top: 3px;
+}
+.type{
+	width: 100%;
+	height: 85px;
+}
+.down{
+	width: 1300px;
+	height: 105px;
+	margin: 0 auto;
+}
+.down ul{
+	display: inline-block;
+	width: 900px;
+	height: 85px;
+}
+.down li{
+	float: left;
+}
+.down li a{
+	color:black;
+	display: inline-block;
+	width: 80px;
+	height: 35px;
+	margin: 5px 5px;
+	line-height: 30px;
+	text-align: center;
+	background:rgba(245,245,245)
+}
+.register{
+	display: none;
+	margin-left: 10px;
+	width: 300px;
+	height: 95px;
+	border: 1px solid #e9e7ef;
+}
+.register input{
+	font-size: 12px;
+	color: #758a99;
+	height: 25px;
+	width: 200px;
+	padding-left: 10px;
+	border-radius: 3px;
+}
+.register p{
+	height: 15px;
+	margin-left: 80px;
+}
+.gray{
+	font-size: 10px;
+	color: gray;
+}
+.red{
+	color: red;
+	font-size: 10px;
+}
+#snIn{
+	float: left;
+	display: none;
+}
+#signIn{
+	display: none;
+	padding-left: 0;
+	display: inline-block;
+	margin-top: 8px;
+	margin-left: 8px;
+	width: 80px;
+	height: 70px;
+}
+#pleaseSignIn{
+	display: inline-block;
+	margin: 4px 80px;
+	width: 200px;
+	height: 60px;
+}
+#userDiv{
+	display: none;
+}
+#userDiv img{
+	display: inline-block;
+	margin:5px 20px;
+	width: 70px;
+	height: 70px;
+	border-radius:50%;
+	border:4px solid #F0E68C;
+}
+#user{
+	margin-bottom: 18px;
+	display: inline-block;
+	font-size: 18px;
+	width: 180px;
+	height: 40px;
+	color: #F0E68C;
+}
+#signOut{
+	cursor:pointer;
+	margin-bottom: 18px;
+	display: inline-block;
+	font-size: 15px;
+	width: 50px;
+	height: 40px;
+	color: #F0E68C;
+}
+.register span{
+	display: inline-block;
+	margin: 5px 18px;
+}
+.down form,.down ul{
+	float: left;
+}
+.main{
+	margin-top: 10px;
+	position: relative;
+	background: url('img/p4220.jpg') no-repeat center center;
+	width: 100%;
+	height: 1000px;
+}
+.film{
+	width: 1300px;
+	height: 1000px;
+	margin: 0 auto;
+}
+.film .classic{
+	font-size: 40px;
+	color: white;
+	padding: 20px 0;
+	text-align: center;
+	opacity: 0.8;
+}
+.film li img{
+	width: 200px;
+	opacity: 0.7;
+}
+.film ul{
+	text-align: center;
+	display: inline-block;
+	margin: 0 80px;
+}
+.film li{
+	float: left;
+	color: white;
+	opacity: 0.8;
+	font-size: 18px;
+	margin: 0 10px;
+}
+.end{
+	margin-top: 80px;
+	margin-bottom: 5px;
+	margin-left: 200px;
+	font-size: 21px;
+	color: white;
+}
+.thanks{
+	margin-bottom: 20px;
+	margin-left: 200px;
+	font-size: 40px;
+	color: white;
+}
+.love{
+	margin-left: 200px;
+	font-size: 15px;
+    line-height: 30px;
+    color: hsla(0,0%,100%,.5);
+    white-space: pre-wrap;
+}
+.devote img{
+	width: 300px;
+}
+.devote{
+	width: 300px;
+	height: 265px;
+	margin: 0 auto;
+	opacity: 0.8;
+}
+.last{
+	height: 100px;
+	width: 100%;
+	background: #20232C;
+}
+.last div{
+	height: 100px;
+	width: 1300px;
+	margin: 0 auto;
+}
+.last ul{
+	width: 1300px;
+	height: 50px;
+}
+.last li{
+	float: left;
+	width: 80px;
+}
+.last li a{
+	font-size: 12px;
+	color: #d5d5d5;
+	padding-top: 30px;
+	line-height: 50px;
+}
+.last p{
+	padding: 15px 0;
+	color: #4794D8;
+	font-size: 12px;
+}
+.last p span{
+	font-size: 12px;
+	color: #72747c;
+}
